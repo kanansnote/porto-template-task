@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24252a;
+    padding: 5vh;
+    
+    img {
+        object-fit: contain;
+        margin-left: 3vh;
+    }
+}
+
+nav {
+    margin-right: 3vh;
+    
+
+    ul {
+        display: flex;
+        gap: 5vh;
+        
+        li {
+            list-style-type: none;
+            
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+#upBanner {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('/assets/images/upbanner_bg.jpg');
+    height: 80vh;
+    
+    img {
+        width: 75vh;
+        border: solid 10px white;
+        border-radius: 4px;
+    }
+
+    #upBannerText {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100vh;
+        span {
+            color: #0088CC;
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 3rem;
+            letter-spacing: 0;
+            width: 70vh;
+        }
+        
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            font-weight: 900;
+        }
+
+        p {
+            width: 70vh;
+        }
+
+    }
+}
+
+#specialFlag {
+    margin-top: -10vh;
+    width: 40%;
+    padding: 5vh;
+    background-color: #0088CC;
+}
+
+#stars {
+    display: flex;
+    justify-content: center;
+    
+    img {
+        width: 25px;
+        height: 50px;
+    }
+}
+
+#perfectTemplateInfo {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    p {
+        margin-top: 6vh;
+        width: 150vh;
+    }
+}
+
+#perfectTemplateResult {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    .perfectTemplateStats {
+        margin: 5vh;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 900;
+        }
+        
+        h2 {
+            margin-bottom: 1vh;
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 18px;
+            color: #0088CC;
+
+            i {
+                color: #0088CC;    
+            }
+        }
+    }
+}
+
+#perfectTemplateImages {
+    img {
+        border: solid 10px white;
+        border-radius: 4px;
+    }
+
+    #intro1Img {
+        position: absolute;
+        z-index: 1;
+        left: 40vh;
+        width: 120vh;
+    }
+
+    #intro2Img {
+        position: absolute;
+        left: 7vh;
+        z-index: 2;
+    }
+
+    #intro3Img {
+        position: absolute;
+        top: 180vh;
+        right: 13vh;
+        z-index: 3;
+    }
+}
+
+#reasonsOfChoice {
+    margin-top: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5vh;
+
+    button {
+        background-color: #212529;
+        border-color: white;
+        color: white;
+        border-radius: 35px;
+        padding: 2vh;
+    }
+}
+
+#reasonsText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reasonsCards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5vh;
+    
+    .reasonsCard {
+        display: flex;
+        flex-direction: column;
+        
+        img {
+            display: block;
+            width: 55vh;
+        }
+        
+        p {
+            width: 50vh;
+            margin-left: 10px;
+        }
+
+        .reasonsCardHeader {
+            display: flex;
+            flex-direction: row;
+            font-size: 80px;
+            
+            .reasonsCardText {
+                display: flex;
+                flex-direction: column;
+                font-size: 23px;
+                margin: 2.25vh;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+#prebuiltDemos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5vh;
+
+    #demoHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 5vh;
+
+        span {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+    }
+
+    #demoCards {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        img {
+            width: 60vh;
+        }
+        
+        h4 {
+            text-align: center;
+            margin-top: 2vh;
+        }
+    }
+}
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #212529;
+    
+    img {
+        margin-bottom: 3vh;
+        object-fit: contain;
+    }
+
+    #footerMain {
+        padding: 5vh;
+    }
+
+    #socialLinks {
+        margin-top: 3vh;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            
+            li {
+                width: 8vh;
+                padding: 2vh;
+                background-color: #1C2023;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    #copyright {
+        padding: 3vh 0 1.5vh 0;
+        width: 100%;
+        background-color: #1C2023;
+        text-align: center;
+        
+        p {
+            a {
+                color: white;
+            }
+        }
+    }
+}   
+
+@media screen and (max-width: 1200px) {
+    #upBanner {
+        img {
+            margin-top: 10px;
+        }
+        
+        #upBannerText {
+            align-items: center;
+            text-align: center;
+        }
+    }
+    
+    #specialFlag {
+        margin-top: 15vh;
+        margin-left: 11%;
+        text-align: center;
+        width: 80%;
+    }
+
+    #perfectTemplateInfo {
+        p {
+            width: 75%;
+        }
+    }
+
+    #perfectTemplateImages {
+        #intro1Img {
+            width: 60%;
+        }
+
+        #intro2Img {
+            left: 7%;
+        }
+
+        #intro3Img {
+            top: 237%;
+        }
+    }
+
+    #prebuiltDemos {
+        #demoCards {
+            img {
+                width: 30vh;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    #menu {
+        background-color: black;
+        padding: 2vh;
+        border-radius: 10px;
+        
+        #burger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 2rem;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            
+            .line {
+                width: 2rem;
+                height: 0.25rem;
+                background: white;
+            }
+        }
+
+        #links {
+            display: none;
+        }
+    }
+}
