@@ -275,17 +275,17 @@ nav {
 
             h4 {
                 width: 25vh;
-                margin-bottom: -10px;
+                margin-bottom: -5px;
             }
 
             span {
-                font-size: 14px;
+                font-size: 17px;
             }
 
             .stars {
                 display: flex;
-                justify-content: left;
                 margin-top: 1vh;
+                margin-bottom: 1vh;
                 
                 img {
                     width: 15px;
@@ -294,7 +294,8 @@ nav {
             }
 
             .priceIsDiscounted {
-                margin-right: 3vh;
+                color: grey;
+                margin-right: 2vh;
                 text-decoration: line-through;
                 font-size: 12px;
             }
@@ -324,6 +325,7 @@ footer {
         #subscriptionInput {
             form { 
                 input {
+                    width: 45vh;
                     margin-right: -4px;
                     color: #222529;
                     background-color: lightgray;
