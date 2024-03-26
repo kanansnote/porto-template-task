@@ -13,7 +13,7 @@ header {
     display: flex;
     align-items: center;
     padding: 5vh;
-    
+
     img {
         object-fit: contain;
         width: 9%;
@@ -23,7 +23,7 @@ header {
 }
 
 nav {
-    
+
     ul {
         display: flex;
 
@@ -31,7 +31,7 @@ nav {
             list-style-type: none;
             margin-bottom: 1vh;
             margin-left: 1vh;
-            
+
             a {
                 text-decoration: none;
                 color: #24252a;
@@ -45,6 +45,7 @@ nav {
     #textLinks {
         margin-left: 6vh;
         gap: 5vh;
+
     }
 
     #iconLinks {
@@ -64,7 +65,7 @@ nav {
 #upBanner {
     color: white;
     display: flex;
-    
+
     img {
         width: 100%;
         height: 120vh;
@@ -86,23 +87,23 @@ nav {
             color: #0088CC;
             font-weight: bold;
         }
-        
-        #upBannerHeadings {    
+
+        #upBannerHeadings {
             display: inline-flex;
             flex-direction: column;
             margin-top: 5vh;
-            
+
             h2 {
-                font-family: "Segoe Script","Savoye LET";
+                font-family: "Segoe Script", "Savoye LET";
                 font-size: 2em;
                 text-transform: none;
                 color: #777;
             }
-    
+
             h3 {
                 font-size: 2.6em;
             }
-    
+
             h4 {
                 font-size: 4.5em;
                 text-transform: none;
@@ -110,16 +111,19 @@ nav {
                 bottom: 2.5vh;
             }
         }
-        
 
 
-        h3, h4, a, span {
+
+        h3,
+        h4,
+        a,
+        span {
             color: #222529;
         }
 
         #upBannerSpans {
             letter-spacing: 0;
-            
+
             #priceInUpBanner {
                 display: inline-block;
                 margin-left: 1vh;
@@ -163,9 +167,9 @@ nav {
         background: none;
         border: none;
         transition: all 0.25s ease-in-out;
-        z-index: 1500;
+        z-index: 1;
         max-width: 100%;
-        
+
         &:hover {
             transition: all 0.25s ease-in-out;
             background: 3px solid white;
@@ -177,7 +181,7 @@ nav {
             border-width: 0 4px 4px 0;
             padding: 5px;
         }
-        
+
         &:active .bothArrows {
             border-right: 3px solid black;
             border-bottom: 3px solid black;
@@ -196,7 +200,7 @@ nav {
         position: absolute;
         left: 2%;
     }
-    
+
     .arrowRightButton {
         position: absolute;
         right: 4%;
@@ -209,12 +213,14 @@ nav {
     gap: 10px;
     width: 90%;
     overflow-x: scroll;
-    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
 
     &::-webkit-scrollbar {
-        display: none; /* Hide scrollbar for Edge, Chrome, Safari and Opera */
+        display: none;
+        /* Hide scrollbar for Edge, Chrome, Safari and Opera */
     }
-    
+
     .categoryCard {
         display: flex;
         flex-direction: column;
@@ -224,7 +230,7 @@ nav {
         img {
             width: 15vw;
         }
-        
+
         .categoryCardHeader {
             display: flex;
             flex-direction: column;
@@ -268,7 +274,7 @@ nav {
             img {
                 width: 30vh;
             }
-            
+
             p {
                 font-size: 15px;
             }
@@ -286,7 +292,7 @@ nav {
                 display: flex;
                 margin-top: 1vh;
                 margin-bottom: 1vh;
-                
+
                 img {
                     width: 15px;
                     height: 15px;
@@ -309,30 +315,35 @@ nav {
 
 footer {
     color: #222529;
-    
+
     img {
         margin-bottom: 3vh;
         object-fit: contain;
     }
-    
+
 
     #footerStart {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         padding: 5vh;
 
         #subscriptionInput {
-            form { 
+            form {
+                width: 50vh;
+                margin-left: 15vh;
+
                 input {
-                    width: 45vh;
+                    width: 50%;
                     margin-right: -4px;
                     color: #222529;
                     background-color: lightgray;
                     outline: none;
                 }
 
-                input, button {
+                input,
+                button {
                     padding: 1.5vh;
                     border: 1px;
                 }
@@ -347,13 +358,13 @@ footer {
         #socialLinks {
             text-align: center;
             margin-top: 3vh;
-    
+
             ul {
                 list-style: none;
                 display: flex;
                 justify-content: center;
                 gap: 15px;
-                
+
                 li {
                     width: 8vh;
                     padding: 2vh;
@@ -372,7 +383,7 @@ footer {
         align-items: center;
         padding: 5vh;
         gap: 10vh;
-        
+
         a {
             color: grey;
             text-decoration: none;
@@ -388,7 +399,7 @@ footer {
             flex-wrap: wrap;
             gap: 15px;
             width: 80vh;
-            
+
             #contactDetails {
                 display: flex;
                 flex-wrap: wrap;
@@ -408,7 +419,7 @@ footer {
             flex-wrap: wrap;
             gap: 15px;
             width: 1000px;
-            
+
             .footerMainDetail {
                 display: flex;
                 flex-wrap: wrap;
@@ -421,13 +432,13 @@ footer {
         }
     }
 
-    
+
     #footerLast {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        
+
         #copyright {
             margin-left: 4vh;
 
@@ -442,7 +453,7 @@ footer {
             align-items: center;
             margin-top: 15px;
             margin-right: 3vh;
-            
+
             img {
                 width: 70px;
                 height: 40px;
@@ -451,11 +462,10 @@ footer {
             }
         }
     }
-}   
-
+}
 
 @media screen and (max-width: 800px) {
-    
+
     #menu {
         display: flex;
         flex-direction: column;
@@ -481,10 +491,6 @@ footer {
                 background: black;
             }
         }
-
-        #textLinks {
-            display: none;
-        }
     }
 
     #upBanner {
@@ -498,38 +504,7 @@ footer {
         }
     }
     
-    #specialFlag {
-        margin-top: 15vh;
-        margin-left: 11%;
+    #footerStart {
         text-align: center;
-        width: 80%;
-    }
-
-    #perfectTemplateInfo {
-        p {
-            width: 75%;
-        }
-    }
-
-    #perfectTemplateImages {
-        #intro1Img {
-            width: 60%;
-        }
-
-        #intro2Img {
-            left: 7%;
-        }
-
-        #intro3Img {
-            top: 237%;
-        }
-    }
-
-    #prebuiltDemos {
-        #demoCards {
-            img {
-                width: 30vh;
-            }
-        }
     }
 }
